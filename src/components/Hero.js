@@ -1,5 +1,6 @@
-// Using arrow function!
-const NewSourceCode = () => {
+import React from "react";
+
+const Hero = () => {
   return (
     <>
       <h1 className="text-9xl text-cyan-400 font-normal mt-16">
@@ -17,4 +18,4 @@ const NewSourceCode = () => {
   );
 };
 
-export default NewSourceCode;
+export default Hero;
