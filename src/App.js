@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import NewSourceCode from "./components/NewSource";
+import logo from "./images/logo.svg";
+import "./styles/App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <header className="text-center flex flex-col items-center">
+          <NewSourceCode />
+          <img className="w-1/2 mt-8 img" src={logo} alt="react-logo" />
+        </header>
+      </div>
+    </>
   );
 }
 
-export default App;
+export default App
