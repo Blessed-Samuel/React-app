@@ -1,7 +1,7 @@
 import React from "react";
 
-import Hero from "./components/Hero";
 import logo from "./images/logo.svg";
+import Hero from "./components/Hero";
 import "./styles/App.css";
 
 const App = () => {
