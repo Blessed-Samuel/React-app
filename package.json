@@ -39,8 +39,5 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.11"
-  },
-  "script": { 
-    
   }
 }
