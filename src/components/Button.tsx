@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 
-const Button: React.FC<{ cta: string; colors?: { className?: string } }> = ({ cta, colors }) => {
+interface ButtonProps {
+  cta: string;
+  colors?: { className?: string };
+}
+
+const Button: React.FC<ButtonProps> = ({ cta, colors }) => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
 
   const handleClick = () => {
