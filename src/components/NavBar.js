@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-4 bg-blue-500">
+    <nav className="fixed z-30 w-full p-4 bg-blue-500 bg-opacity-80 backdrop-blur-md">
       <div className="container flex items-center justify-between mx-auto">
         <div className="text-2xl text-white">
           <Link to="/">BrandName</Link>
