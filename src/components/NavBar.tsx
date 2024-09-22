@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -20,18 +20,10 @@ const Navbar = () => {
           </button>
         </div>
         <div className={`lg:flex ${isOpen ? "block" : "hidden"} space-x-4`}>
-          <Link className="text-white hover:text-gray-200" to="/">
-            Home
-          </Link>
-          <Link className="text-white hover:text-gray-200" to="/about">
-            About
-          </Link>
-          <Link className="text-white hover:text-gray-200" to="/services">
-            Services
-          </Link>
-          <Link className="text-white hover:text-gray-200" to="/contact">
-            Contact Us
-          </Link>
+          <Link className="text-white hover:text-gray-200" to="/">Home</Link>
+          <Link className="text-white hover:text-gray-200" to="/about">About</Link>
+          <Link className="text-white hover:text-gray-200" to="/services">Services</Link>
+          <Link className="text-white hover:text-gray-200" to="/contact">Contact Us</Link>
         </div>
       </div>
     </nav>

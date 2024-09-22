@@ -6,7 +6,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <Router>
       <Navbar />

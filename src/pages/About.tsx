@@ -1,12 +1,12 @@
 import React from 'react'
 
-const About = () => {
+const About: React.FC = () => {
   return (
-    <div>About</div>
+    <div>: React.FC</div>
   )
 }
 
-export default About
+export default About;
 
 // import React from "react";
 
