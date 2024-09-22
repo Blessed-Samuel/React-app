@@ -26,7 +26,7 @@ const Hero = () => {
         <mark className="p-3 font-bold bg-amber-400">ReactJS!</mark>
       </h2>
       <h2 className="mt-20 text-3xl text-center text-white font-extralight md:text-5xl">
-        Welcome to Learning JSX in{" "}
+        Welcome to Learning TypeScript: in{" "}
         <mark className="p-3 font-bold bg-amber-400">ReactJS!</mark>
       </h2>
     </div>

@@ -4,14 +4,14 @@
 
 /* Logo Animations */
 .img {
-    animation: logoAnimation linear 8s infinite;
+  animation: logoAnimation linear 8s infinite;
 }
 
 @keyframes logoAnimation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
