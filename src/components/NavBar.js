@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,14 +16,22 @@ const Navbar = () => {
         </div>
         <div className="block lg:hidden">
           <button onClick={toggleMenu} className="text-white">
-            {isOpen ? 'Close' : 'Menu'}
+            {isOpen ? "Close" : "Menu"}
           </button>
         </div>
-        <div className={`lg:flex ${isOpen ? 'block' : 'hidden'} space-x-4`}>
-          <Link className="text-white hover:text-gray-200" to="/">Home</Link>
-          <Link className="text-white hover:text-gray-200" to="/about">About</Link>
-          <Link className="text-white hover:text-gray-200" to="/services">Services</Link>
-          <Link className="text-white hover:text-gray-200" to="/contactus">Contact Us</Link>
+        <div className={`lg:flex ${isOpen ? "block" : "hidden"} space-x-4`}>
+          <Link className="text-white hover:text-gray-200" to="/">
+            Home
+          </Link>
+          <Link className="text-white hover:text-gray-200" to="/about">
+            About
+          </Link>
+          <Link className="text-white hover:text-gray-200" to="/services">
+            Services
+          </Link>
+          <Link className="text-white hover:text-gray-200" to="/contact">
+            Contact Us
+          </Link>
         </div>
       </div>
     </nav>
