@@ -1,25 +1,22 @@
 import React from "react";
-
-import logo from "./images/logo.svg";
-import Hero from "./components/Hero";
-import About from "./apps/About";
-import "./styles/App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/NavBar";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <>
-      <div>
-        <header className="text-center flex flex-col items-center">
-          <Hero />
-          <About />
-
-          <img
-            className="w-1/2 mt-8 img"
-            src={logo} alt="react-logo"  
-          />
-        </header>
-      </div>
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contactus" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 };
 

@@ -1,0 +1,33 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="p-4 bg-blue-500">
+      <div className="container flex items-center justify-between mx-auto">
+        <div className="text-2xl text-white">
+          <Link to="/">BrandName</Link>
+        </div>
+        <div className="block lg:hidden">
+          <button onClick={toggleMenu} className="text-white">
+            {isOpen ? 'Close' : 'Menu'}
+          </button>
+        </div>
+        <div className={`lg:flex ${isOpen ? 'block' : 'hidden'} space-x-4`}>
+          <Link className="text-white hover:text-gray-200" to="/">Home</Link>
+          <Link className="text-white hover:text-gray-200" to="/about">About</Link>
+          <Link className="text-white hover:text-gray-200" to="/services">Services</Link>
+          <Link className="text-white hover:text-gray-200" to="/contactus">Contact Us</Link>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
