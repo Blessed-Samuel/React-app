@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="fixed z-30 w-full p-4 bg-blue-500 bg-opacity-80 backdrop-blur-md">
-      <div className="container flex items-center justify-between mx-auto">
+      <div className="flex items-center justify-between mx-auto max-w-7xl">
         <div className="text-2xl text-white">
           <Link to="/">BrandName</Link>
         </div>
@@ -24,9 +24,12 @@ const Navbar: React.FC = () => {
           <Link className="text-white hover:text-gray-200" to="/about">About</Link>
           <Link className="text-white hover:text-gray-200" to="/services">Services</Link>
           <Link className="text-white hover:text-gray-200" to="/contact">Contact Us</Link>
+          <Link className="text-white hover:text-gray-200" to="/login">LogIn</Link>
+          <Link className="text-white hover:text-gray-200" to="/signup">SignUp</Link>
         </div>
       </div>
     </nav>
+
   );
 };
 
