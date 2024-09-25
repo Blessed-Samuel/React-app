@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { FaArrowRight } from "react-icons/fa";
 
 interface ButtonProps {
   cta: string;
-  colors?: { className?: string };
+  colors?: { className?: string; bgColor?: string; textColor?: string };
 }
 
 const Button: React.FC<ButtonProps> = ({ cta, colors }) => {
@@ -15,18 +14,17 @@ const Button: React.FC<ButtonProps> = ({ cta, colors }) => {
   };
 
   return (
-    <div className="mt-12">
+    <>
       <button
         onClick={handleClick}
-        className={`${isClicked ? "scale-95 bg-gray-800" : "bg-slate-800"
-          } text-white p-4 px-8 rounded-md cursor-pointer 
-        ${colors?.className || "border-2 border-slate-500 hover:border-amber-400"}
-        flex justify-between items-center transition-transform duration-150`}
+        className={`${isClicked ? "scale-95" : ""
+          } ${colors?.bgColor || "bg-Brandlemon60"} ${colors?.textColor || "text-black"} p-4 px-8 rounded-full cursor-pointer 
+          ${colors?.className || "text-black"}
+          flex justify-between items-center transition-transform duration-150`}
       >
         {cta}
-        <FaArrowRight className="ml-4 transform -rotate-45" />
       </button>
-    </div>
+    </>
   );
 };
 

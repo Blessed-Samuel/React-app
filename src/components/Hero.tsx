@@ -1,34 +1,53 @@
 import React from "react";
 import Button from "./Button";
+import Section from "./Section";
+import Container from "./Container";
+import HeroImgRight from "../images/hero-img-right.svg";
 
-export const Hero: React.FC = () => {
+interface HeroProps {
+  subtext?: string;
+  title?: string;
+  bodyInfo?: string;
+  checkIcon?: string;
+}
+
+export const Hero: React.FC<HeroProps> = ({ subtext, title, bodyInfo, checkIcon }) => {
   return (
-    <div className="flex flex-col items-center mx-auto max-w-7xl">
-      <div className="flex flex-col items-center">
-        <h1 className="mt-12 text-4xl font-normal leading-tight text-center md:text-5xl lg:text-9xl text-cyan-400">
-          Explore the latest cutting-edge gadgets at {" "} <span className="font-black text-white">Unbeatable Prices!</span>
-        </h1>
+    <>
+      <Section>
+        <Container>
+          <div className="flex flex-col mx-auto mt-24 md:flex-row md:mt-28">
+            <div className="flex flex-col items-center w-full mx-auto md:w-3/5 md:items-start">
+              <h5 className="flex items-center p-4 px-8 mb-6 text-sm font-light rounded-full md:text-base text-Brandwhite90 bg-Brandblack15">
+                <img src={checkIcon} alt="check-icon" className="mr-2" />
+                {subtext}
+              </h5>
 
-        <div className="flex flex-col items-center justify-center space-x-0 space-y-2 md:space-y-12 md:space-x-8 md:flex-row">
-          <Button cta="SignUp" />
-          <Button
-            cta="LogIn"
-            colors={{
-              className: "border-2 border-cyan-600 hover:border-amber-400",
-            }}
-          />
-        </div>
-      </div>
+              <h1 className="mb-8 text-center text-white text-header font-FontMediun md:text-left leading-custom-150 lg:text-5xl">
+                {title}
+              </h1>
 
-      <h2 className="mt-20 text-3xl text-center text-white font-extralight md:text-5xl">
-        Welcome to Learning <span className="font-bold underline">JSX</span> and <span className="font-bold underline">TypeScript</span> in{" "}
-        <mark className="p-3 font-bold bg-amber-400">ReactJS!</mark>
-      </h2>
+              <p className="text-sm text-center text-Brandwhite90 font-extralight md:text-left">
+                {bodyInfo}
+              </p>
 
-      <h2 className="mt-20 text-3xl text-center text-white font-extralight md:text-5xl">
-        Welcome to Learning <span className="font-bold underline">JSX</span> and <span className="font-bold underline">TypeScript</span> in{" "}
-        <mark className="p-3 font-bold bg-amber-400">ReactJS!</mark>
-      </h2>
-    </div>
+              <div className="mt-10 md:mt-10">
+                <Button
+                  cta="Open Account"
+                  colors={{
+                    bgColor: "bg-Brandlemon60",
+                    textColor: "text-Brandblack11",
+                  }}
+                />
+              </div>
+            </div>
+
+            <div className="w-full mt-10 md:mt-0 md:w-1/2">
+              <img src={HeroImgRight} alt="Hero-img-right" className="w-full max-w-full" />
+            </div>
+          </div>
+        </Container>
+      </Section>
+    </>
   );
 };
