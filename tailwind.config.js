@@ -3,12 +3,21 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}", "./public/**/*.html"],
   theme: {
     extend: {
+      colors: {
+        borderColor: "#262626",
+      },
+
       fontFamily: {
         Brandfont: "Lexend",
       },
 
       fontSize: {
-        header: "30px",
+        header0: "12px",
+        header1: "14px",
+        header2: "28px",
+        header5: "24px",
+        header3: "30px",
+        header4: "48px",
       },
 
       fontWeight: {
@@ -23,12 +32,18 @@ module.exports = {
         Brandlemon65: "#D1FF4C",
         Brandlemon70: "#D8FF66",
         Brandlemon80: "#E5FF99",
+        Brandlemon81: "#B3B3B3",
 
         // White shades
         Brandwhite90: "#E4E4E7",
         Brandwhite95: "#F1F1F3",
         Brandwhite97: "#F7F7F8",
         Brandwhite99: "#FCFCFD",
+      },
+
+      borderWidth: {
+        customBorderWidth: "1.5px",
+        customBorderWidth1: "1px",
       },
 
       backgroundColor: {
@@ -67,6 +82,11 @@ module.exports = {
 
       lineHeight: {
         "custom-150": "150%",
+        "custom-200": "200%",
+      },
+
+      maxWidth: {
+        viewport: "1024px",
       },
     },
   },

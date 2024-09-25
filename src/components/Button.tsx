@@ -20,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({ cta, colors }) => {
         className={`${isClicked ? "scale-95" : ""
           } ${colors?.bgColor || "bg-Brandlemon60"} ${colors?.textColor || "text-black"} p-4 px-8 rounded-full cursor-pointer 
           ${colors?.className || "text-black"}
-          flex justify-between items-center transition-transform duration-150`}
+          flex justify-between text-xs items-center transition-transform duration-150`}
       >
         {cta}
       </button>

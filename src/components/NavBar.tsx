@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
 
   return (
     <Container>
-      <nav className="md:w-[calc(100%-200px)] fixed z-30 w-11/12 transform -translate-x-1/2 bg-gray-900 border-2 border-gray-600 rounded-full top-8 left-1/2 bg-opacity-40 backdrop-blur-md">
+      <nav className="fixed z-30 w-11/12 transform -translate-x-1/2 rounded-full border-[#262626] border-customBorderWidth bg-Brandblack11 max-w-viewport top-8 left-1/2 bg-opacity-40 backdrop-blur-md">
         <div className="flex items-center justify-between px-6 py-3 md:px-10 md:py-4">
           <div className="flex items-center space-x-2 text-sm font-light text-white cursor-pointer">
             <Link to="/" className="flex items-center space-x-2">
@@ -36,8 +36,8 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className={`lg:flex ${isOpen ? "block" : "hidden"} space-x-4 items-center`}>
-            <Link className="text-sm font-light text-white hover:text-gray-200" to="/login">SignUp</Link>
-            <Link className="text-sm font-light" to="/signup">
+            <Link className="text-sm font-light text-white hover:text-gray-200" to="/signup">SignUp</Link>
+            <Link className="text-sm font-light" to="/login">
               <div className="p-0">
                 <Button
                   cta="LogIn"
