@@ -14,6 +14,10 @@ import financeIcon from "../images/icons/finance-icon.svg";
 import saving2Icon from "../images/icons/saving2-icon.svg";
 import homeIcon from "../images/icons/home-icon.svg";
 import educationIcon from "../images/icons/education-ion.svg";
+import enterprenuerIcon from "../images/icons/entreprenuer-icon.svg";
+import cashFlowIcon from "../images/icons/cashflow-icon.svg";
+import businessesIcon from "../images/icons/business-icon.svg";
+import paymentIcon from "../images/icons/payment-icon.svg";
 
 const Home: React.FC = () => {
   return (
@@ -87,7 +91,7 @@ const Home: React.FC = () => {
             />
 
             <div className="grid grid-cols-1 gap-10 lg:grid-rows-1 lg:grid-cols-2">
-              <div className="grid rounded-xl grid-cols-2 lg:grid-rows-2 gap-2.5 p-6 mt-14 lg:grid-cols-2 bg-Brandblack11">
+              <div className="grid rounded-xl grid-cols-2 lg:grid-rows-2 gap-2.5 p-6 mt-14 lg:grid-cols-2 bg-Brandblack11 bg-Card-bg bg-no-repeat">
                 <div className="rounded-lg bg-Brandblack76 border-customBorderWidth border-borderColor">
                   <Cards
                     icon={financeIcon}
@@ -144,13 +148,46 @@ const Home: React.FC = () => {
                 />
               </div>
             </div>
+          </div>
 
-            {/* ############################################################################################### */}
-            <div className="flex flex-col-reverse justify-center lg:flex-row">
+          <div className="text-center lg:text-left">
+            <Headers
+              title="Use Cases"
+              bodyText="At YourBank, we cater to the diverse needs of individuals and businesses alike, offering a wide range of financial solutions."
+            />
+
+            <div className="grid grid-cols-1 gap-10 lg:grid-rows-1 lg:grid-cols-2">
+              <div className="grid rounded-xl grid-cols-2 lg:grid-rows-2 gap-2.5 p-6 mt-14 lg:grid-cols-2 bg-Brandblack11 bg-Card-bg bg-no-repeat">
+                <div className="rounded-lg bg-Brandblack76 border-customBorderWidth border-borderColor">
+                  <Cards
+                    icon={enterprenuerIcon}
+                    title="Startups and Entrepreneurs"
+                  />
+                </div>
+                <div className="rounded-lg bg-Brandblack76 border-customBorderWidth border-borderColor">
+                  <Cards
+                    icon={cashFlowIcon}
+                    title="Cash Flow Management"
+                  />
+                </div>
+                <div className="rounded-lg bg-Brandblack76 border-customBorderWidth border-borderColor">
+                  <Cards
+                    icon={businessesIcon}
+                    title="Business Expansion"
+                  />
+                </div>
+                <div className="rounded-lg bg-Brandblack76 border-customBorderWidth border-borderColor">
+                  <Cards
+                    icon={paymentIcon}
+                    title="Payment Solutions"
+                  />
+                </div>
+              </div>
+
               <div className="">
                 <Headers
                   title="For Businesses"
-                  bodyText="For businesses, we empower growth with working capital solutions that optimize cash flow, and our tailored financing options fuel business expansion. Whatever your financial aspirations, YourBank is committed to providing the right tools and support to achieve them."
+                  bodyText=" For businesses, we empower growth with working capital solutions that optimize cash flow, and our tailored financing options fuel business expansion. Whatever your financial aspirations, YourBank is committed to providing the right tools and support to achieve them"
                 />
 
                 <div className="flex flex-col justify-between lg:flex-row">
@@ -175,33 +212,6 @@ const Home: React.FC = () => {
                     textColor: "text-white",
                   }}
                 />
-              </div>
-
-              <div className="grid rounded-xl grid-cols-2 lg:grid-rows-2 gap-2.5 p-6 mt-14 lg:grid-cols-2 bg-Brandblack11">
-                <div className="rounded-lg bg-Brandblack76 border-customBorderWidth border-borderColor">
-                  <Cards
-                    icon={financeIcon}
-                    title="Managing Personal Finances"
-                  />
-                </div>
-                <div className="rounded-lg bg-Brandblack76 border-customBorderWidth border-borderColor">
-                  <Cards
-                    icon={saving2Icon}
-                    title="Saving for the Future"
-                  />
-                </div>
-                <div className="rounded-lg bg-Brandblack76 border-customBorderWidth border-borderColor">
-                  <Cards
-                    icon={homeIcon}
-                    title="Home Ownership"
-                  />
-                </div>
-                <div className="rounded-lg bg-Brandblack76 border-customBorderWidth border-borderColor">
-                  <Cards
-                    icon={educationIcon}
-                    title="Educational Funding"
-                  />
-                </div>
               </div>
             </div>
           </div>

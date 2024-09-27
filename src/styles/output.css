@@ -673,7 +673,7 @@ video {
 }
 
 .max-w-viewport {
-  max-width: 1024px;
+  max-width: 1280px;
 }
 
 .grow {
@@ -821,8 +821,16 @@ video {
   --tw-bg-opacity: 0.4;
 }
 
+.bg-Card-bg {
+  background-image: url('../images/card-bg.svg');
+}
+
 .bg-none {
   background-image: none;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-0 {

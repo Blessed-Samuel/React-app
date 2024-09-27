@@ -88,7 +88,7 @@ module.exports = {
       },
 
       maxWidth: {
-        viewport: "1024px",
+        viewport: "1280px",
       },
     },
   },
