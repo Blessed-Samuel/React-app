@@ -3,7 +3,7 @@ import Section from './Section';
 import Container from './Container';
 
 interface HeaderProps {
-    title: string;
+    title?: string;
     bodyText: string;
 }
 

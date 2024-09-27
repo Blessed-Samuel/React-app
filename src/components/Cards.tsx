@@ -5,7 +5,8 @@ import Container from './Container';
 interface CardsProps {
     icon: string;
     title: string;
-    subText: string;
+    subText?: string;
+    className?: string;
 }
 
 const Cards: React.FC<CardsProps> = ({ icon, title, subText }) => {

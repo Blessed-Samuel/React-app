@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
     <Container>
       <nav className="fixed z-30 w-11/12 transform -translate-x-1/2 rounded-full border-[#262626] border-customBorderWidth bg-Brandblack11 max-w-viewport top-8 left-1/2 bg-opacity-40 backdrop-blur-md">
         <div className="flex items-center justify-between px-6 py-3 md:px-10 md:py-4">
-          <div className="flex items-center space-x-2 text-sm font-light text-white cursor-pointer">
+          <div className="flex items-center space-x-2 text-xs font-light text-white cursor-pointer">
             <Link to="/" className="flex items-center space-x-2">
               <img src={Brandlogo} alt="brand-logo" className="w-auto h-8" />
               <span>YourBank</span>
@@ -28,16 +28,16 @@ const Navbar: React.FC = () => {
             </button>
           </div>
 
-          <div className={`lg:flex ${isOpen ? "block" : "hidden"} space-x-10 mx-auto`}>
-            <Link className="text-sm font-light text-white hover:text-gray-200" to="/">Home</Link>
-            <Link className="text-sm font-light text-white hover:text-gray-200" to="/careers">Careers</Link>
-            <Link className="text-sm font-light text-white hover:text-gray-200" to="/about">About</Link>
-            <Link className="text-sm font-light text-white hover:text-gray-200" to="/security">Security</Link>
+          <div className={`lg:flex ${isOpen ? "block" : "hidden"} space-x-6 mx-auto`}>
+            <Link className="text-xs font-light text-white hover:text-gray-200" to="/">Home</Link>
+            <Link className="text-xs font-light text-white hover:text-gray-200" to="/careers">Careers</Link>
+            <Link className="text-xs font-light text-white hover:text-gray-200" to="/about">About</Link>
+            <Link className="text-xs font-light text-white hover:text-gray-200" to="/security">Security</Link>
           </div>
 
           <div className={`lg:flex ${isOpen ? "block" : "hidden"} space-x-4 items-center`}>
-            <Link className="text-sm font-light text-white hover:text-gray-200" to="/signup">SignUp</Link>
-            <Link className="text-sm font-light" to="/login">
+            <Link className="text-xs font-light text-white hover:text-gray-200" to="/signup">SignUp</Link>
+            <Link className="text-xs font-light" to="/login">
               <div className="p-0">
                 <Button
                   cta="LogIn"

@@ -64,6 +64,7 @@ module.exports = {
         Brandblack60: "#98989A",
         Brandblack70: "#B3B3B3",
         Brandblack75: "#BFBFBF",
+        Brandblack76: "#1A1A1A",
 
         // Lemon shades
         Brandlemon60: "#CAFF33",
@@ -73,7 +74,8 @@ module.exports = {
       },
 
       backgroundImage: {
-        "Hero-bg": "url('../images/Hero-bg.svg')",
+        "Home-bg": "url('../images/Home-bg.svg')",
+        "Card-bg": "url('../images/card-bg.svg')",
       },
 
       borderColor: {
