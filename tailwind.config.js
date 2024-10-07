@@ -86,10 +86,6 @@ module.exports = {
         "custom-150": "150%",
         "custom-200": "200%",
       },
-
-      maxWidth: {
-        viewport: "1280px",
-      },
     },
   },
   plugins: [],

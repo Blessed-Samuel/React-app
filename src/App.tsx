@@ -7,25 +7,19 @@ import Login from "./apps/Login";
 import Signup from "./apps/Signup";
 import Security from "./apps/Security";
 import Careers from "./apps/Careers";
-import Container from "./components/Container";
-import Section from "./components/Section";
 
 const App: React.FC = () => {
   return (
     <Router>
       <Navbar />
-      <Section>
-        <Container>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/careers" element={<Careers />} />
-            <Route path="/security" element={<Security />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/login" element={<Login />} />
-          </Routes>
-        </Container>
-      </Section>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/security" element={<Security />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </Router>
   );
 };
